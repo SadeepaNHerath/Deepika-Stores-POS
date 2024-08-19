@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainWindow" prefHeight="489.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashFormController">
+   <children>
+      <ImageView fitHeight="83.0" fitWidth="630.0" layoutY="406.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/Footer.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="75.0" stroke="BLACK" strokeType="INSIDE" width="630.0" />
+      <Text fill="#fdd835" layoutX="188.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deepika">
+         <font>
+            <Font name="Tahoma" size="38.0" />
+         </font>
+      </Text>
+      <Text fill="#e53935" layoutX="337.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stores">
+         <font>
+            <Font name="Tahoma" size="38.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="94.0" fitWidth="115.0" layoutX="536.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="317.0" fitWidth="351.0" layoutY="86.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/man.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnAddCustomer" buttonType="RAISED" layoutX="335.0" layoutY="86.0" onAction="#btnAddCustomerOnAction" prefHeight="48.0" prefWidth="212.0" style="-fx-background-color: #4CAF50; -fx-background-radius: 10px;" text="Add Customer">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdateCustomer" buttonType="RAISED" layoutX="335.0" layoutY="160.0" onAction="#btnUpdateCustomerOnAction" prefHeight="48.0" prefWidth="212.0" style="-fx-background-radius: 10px; -fx-background-color: #FF9800;" text="Update Customer">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDeleteCustomer" buttonType="RAISED" layoutX="335.0" layoutY="232.0" onAction="#btnDeleteCustomerOnAction" prefHeight="48.0" prefWidth="212.0" style="-fx-background-radius: 10px; -fx-background-color: #F44336;" text="Delete Customer">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSearchCustomer" buttonType="RAISED" layoutX="335.0" layoutY="303.0" onAction="#btnSearchCustomerOnAction" prefHeight="48.0" prefWidth="212.0" style="-fx-background-radius: 10px; -fx-background-color: #2196F3;" text="Search Customer">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnExit" buttonType="RAISED" layoutX="549.0" layoutY="368.0" onAction="#btnExitOnAction" prefHeight="35.0" prefWidth="68.0" ripplerFill="WHITE" style="-fx-background-radius: 10px; -fx-background-color: #D32F2F;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
